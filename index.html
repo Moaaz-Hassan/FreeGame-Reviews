@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
+    <link rel="icon" type="image/png" href="https://routeegy.github.io/GameOOP/assets/images/logo-sm.png">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header>
+    </header>
+    <div class="header-content">
+        <div class="title">
+            <img src="https://routeegy.github.io/GameOOP/assets/images/logo-sm.png" alt="">
+            <h1 class="font-heading uppercase">Game Reviews</h1>
+        </div>
+        <div class="hamburger"><p>☰</p></div>
+        <ul class="display-non">
+            <li class="font-subheading uppercase gamecategory mmorpg" >mmorpg</li>
+            <li class="font-subheading uppercase gamecategory shooter" >shooter</li>
+            <li class="font-subheading uppercase gamecategory sailing" >sailing</li>
+            <li class="font-subheading uppercase gamecategory permadeath" >permadeath</li>
+            <li class="font-subheading uppercase gamecategory superhero" >superhero</li>
+            <li class="font-subheading uppercase gamecategory pixel" >pixel</li>
+        </ul>
+    </div>
+    <div class="games-container">
+
+    </div>
+    <div class="game-details doNone">
+        <div class="details-header">
+            <h2 class="font-heading">Details Game</h2>
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="details-content">
+            <img  alt="">
+            <div class="content">
+                
+                <h2 class=" font-heading titlegame">Title: <span id="details-title"></span></h2>
+                <h2 class="category font-button">Category: <span  class="details-font" id="details-category"></span></h2>
+                <h2 class="platform font-button">Platform: <span  class="details-font" id="details-platform"></span></h2>
+                <h2 class="statuse font-button">Status: <span class="details-font"  id="details-status"></span></h2>
+                <p class="font-subheading" id="details-description"> </p>
+                <a  target="_blank" id="details-ShowGam" class="font-button">Show Game</a>
+            </div>
+        </div>
+    </div>
+    <div id="loader" class="loader doNone"></div>
+
+    <script src="./index.js" type="module"></script>
+</body>
+</html>

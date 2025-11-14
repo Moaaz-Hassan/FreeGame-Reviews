@@ -1,0 +1,367 @@
+*{
+    padding: 0px ;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(39, 43, 48);
+}
+
+/* fontes */
+.font-heading{
+    font-family: "Nerko One", cursive;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+.font-subheading{
+    font-family: Comfortaa, cursive;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: rgb(255, 255, 255);
+}
+.font-button{
+    font-family: Comfortaa, cursive;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(255, 255, 255);
+}
+.font-highlight{
+    font-family: Comfortaa, cursive;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgb(99, 102, 106);
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.details-font{
+    width: fit-content;
+    color: black;
+    font-size: 13px;
+    font-weight: 800;
+    font-family: Comfortaa, cursive;
+    padding: 3px 3px;
+    border-radius: 5px;
+    background-color: rgb(13, 202, 240);
+}
+
+/* style tages */
+header{
+    background-image: url(https://routeegy.github.io/GameOOP/assets/images/wraper.png);
+    background-size: cover;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-content {
+    background-color: rgb(58, 73, 123);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    position: sticky;
+    top: 30px;             
+    padding: 10px;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out 0s;
+    z-index: 1;
+    transform: translateY(-30px);
+    height: 50px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+}
+.title img{
+    width: 40px;
+    padding-right: 5px;
+}
+ul {
+    list-style: none;
+    align-self: center;
+}
+
+ul li {
+    display: inline;
+    padding: 0 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+}
+ul li:hover{
+    color: rgb(4, 146, 197);
+}
+
+
+.hamburger {
+  font-size: 25px;
+  border-style: solid;
+  width: 40px;
+  height: 30px;
+  border-radius: 10%;
+  border-width: 1px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: rgb(39, 43, 48);
+  border-color: rgb(39, 43, 48);
+  transition: all 0.2s ease-in-out 0s;
+}
+.slectedCat{
+    color:  rgb(4, 146, 197) !important;
+}
+.hamburger:hover {
+  color: rgb(4, 146, 197);
+  border-color: rgb(4, 146, 197);
+}
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    width: 90%;
+    margin: 10px auto;
+}
+.games-container .game{
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    transition: all 0.3s ease-in-out 0s;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    text-align: center;
+    justify-content: space-between; 
+    height: 100%;
+}
+.games-container .game img{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+
+}
+.image-container{
+    position: relative;
+    overflow-x: hidden;
+    
+}
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 32, 32, 0.252);
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+    transition: all 0.3s ease-in-out 0s;
+    opacity: 1;
+}
+.game div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Category-platform{
+    border-top-style: solid;
+    padding: 5px 2px;
+}
+.Category-platform div{
+    width: fit-content;
+    padding: 5px 5px ;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(54, 55, 57);
+}
+.title-price div{
+    width: fit-content;
+    padding: 5px 5px ;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(29, 102, 246);
+    position: relative;
+}
+.title-price div::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 27, 27, 0.33);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out 0s;
+    opacity: 1;
+}
+
+.game:hover .image-container::after{
+    opacity: 0;
+}
+.game:hover {
+    transform: scale(1.03);
+}
+.game:hover .title-price div::after{
+    opacity: 0;
+}
+
+
+.game-details{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:rgb(39, 40, 43) ;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    overflow-y: auto;
+    padding: 40px 10%;
+}
+.game-details .details-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.game-details .details-header i {
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+}
+.game-details .details-header i:hover {
+    color: orange;
+    transform: scale(1.05);
+
+}
+
+body.no-scroll{
+    overflow: hidden;
+}
+#details-ShowGam{
+    border-color: rgb(151, 119, 24);
+    width: fit-content;
+    padding: 5px 10px;
+    border-style: solid;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out 0s;
+    text-decoration: none;
+    
+}
+#details-ShowGam:hover{
+    background-color: orange;
+    transform: scale(1.03);
+
+}
+.details-content{
+    display: flex;
+    column-gap: 20px;
+}
+.details-content img{
+    height: fit-content;
+}
+.details-content .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.doNone{
+    display: none !important;
+}
+
+.loader {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #ccc;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin: 50px auto;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 3 */
+@media (max-width: 1490px){ 
+    header{
+        height: 185px;
+    }
+    .header-content{
+        width: 85%;
+    }
+    .games-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .game-details{
+        padding: 40px 5%;
+    }
+}
+/* 2 */
+@media (max-width: 1100px) {
+    
+    header{
+        height: 175px;
+    }
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 10px;
+    }
+    .header-content{
+        height: fit-content;
+        flex-direction: column;
+        width: 87%;
+        
+    }
+    ul{
+        align-self: flex-start;
+    }
+    .display-non{
+        display: none;
+    }
+    ul li {
+        display: block;
+        padding: 5px 0px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out 0s;
+    }
+    .games-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+}
+/* 1 */
+@media (max-width: 750px){ 
+    header{
+        height: 140px;
+    }
+    .header-content{
+        width: 90%;
+    }
+    .games-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .details-content{
+        flex-direction: column;
+        row-gap: 20px;
+
+    }
+}
+
