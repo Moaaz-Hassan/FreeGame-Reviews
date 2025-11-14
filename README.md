@@ -3,6 +3,9 @@
 A responsive web application that loads **free games** from an external
 API, displays them as interactive cards, and shows full details when the
 user clicks on any game.
+## Live Demo
+You can see the project here:  
+[Click Here ](https://moaaz-hassan.github.io/FreeGame-Reviews/)
 
 ## Features
 
